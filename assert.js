@@ -34,9 +34,6 @@ function compare(a, b) {
   return 0;
 }
 function isBuffer(b) {
-  if (global.Buffer && typeof global.Buffer.isBuffer === 'function') {
-    return global.Buffer.isBuffer(b);
-  }
   return !!(b != null && b._isBuffer);
 }
 
