@@ -27,5 +27,8 @@
     "test": "npm run test-node && npm run test-browser",
     "test-native": "TEST_NATIVE=true mocha --ui qunit test.js",
     "browser-local": "zuul --no-coverage --local 8000 -- test.js"
+  },
+  "publishConfig": {
+    "registry": "http://registry.npm.alibaba-inc.com"
   }
 }
