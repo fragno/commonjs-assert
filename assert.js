@@ -78,9 +78,6 @@ function isView(arrbuf) {
   if (isBuffer(arrbuf)) {
     return false;
   }
-  if (typeof global.ArrayBuffer !== 'function') {
-    return false;
-  }
   if (typeof ArrayBuffer.isView === 'function') {
     return ArrayBuffer.isView(arrbuf);
   }
