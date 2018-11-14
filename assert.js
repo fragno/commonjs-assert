@@ -96,7 +96,7 @@ function isView(arrbuf) {
 // AssertionError's when particular conditions are not met. The
 // assert module must conform to the following interface.
 
-var assert = ok;
+var assert = module.exports = ok;
 
 // 2. The AssertionError is defined in assert.
 // new assert.AssertionError({ message: message,
@@ -484,5 +484,3 @@ var objectKeys = Object.keys || function (obj) {
   }
   return keys;
 };
-
-export default assert;
